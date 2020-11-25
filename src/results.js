@@ -12,7 +12,7 @@ class Results extends React.Component {
 				<ol>
 					{data.map((item, i) => (
 						<li key={i}>
-							<Link to={"/contact/" + item.name}>{item.name}</Link>
+							<Link to={`/contact/${item.name}`}>{item.name}</Link>
 						</li>
 					))}
 				</ol>
