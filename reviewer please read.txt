@@ -1,0 +1,10 @@
+Hi,
+
+I have included a mix of functional and class based components purely
+to showcase both areas. I have also left the architecture the same - 
+if this were commercial software, i would ofcourse refractor it.
+Only included 2 tests, but i think you get 'jest' of it.
+
+Thankyou for taking the time to review my code.
+
+- Maeglyn
