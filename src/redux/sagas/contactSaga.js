@@ -26,7 +26,7 @@ function* fetchContacts(action) {
 			yield put({ type: 'UPDATE_CONTACTS_FAILED', error: result });
 		}
 	} catch (error) {
-		yield put({ type: 'UPDATE_CONTACTS_FAILED', error });
+		yield put({ type: 'UPDATE_CONTACTS_FAILED', error: error.toString() });
 	}
 }
 
