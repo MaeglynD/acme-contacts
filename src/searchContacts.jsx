@@ -5,7 +5,7 @@ import Results from "./results";
 import LoadingOverlay from './loadingOverlay';
 import { updateContacts, clearContacts } from "./redux/actions/contacts";
 
-const SearchContacts = () => {
+const SearchContacts = ({ params }) => {
 	const [str, setStr] = useState('');
 	const dispatch = useDispatch();
 	const contacts = useSelector((state) => state.contacts.contacts);
@@ -13,7 +13,11 @@ const SearchContacts = () => {
 	const error = useSelector((state) => state.contacts.error);
 
 	useEffect(() => {
-		// 
+		// checks the url for a search term
+		const { terms } = params;
+		
+		// if there is one, search it
+		if (typeof terms === 'string') update(terms);
 	}, [])
 
 	// onSubmit, update everywhere

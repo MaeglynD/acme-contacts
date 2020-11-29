@@ -9,7 +9,7 @@ const ContactPage = ({ params }) => {
 	useEffect(() => {
 		const { contact } = params;
 
-		if (!!contact) {
+		if (contact && contacts) {
 			const found = contacts.find((x) => x.name === contact);
 			if (found) setData(found);
 		}

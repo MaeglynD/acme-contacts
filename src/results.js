@@ -21,7 +21,7 @@ class Results extends React.Component {
 				)
 
 			// if not an array, null check, then log the error message
-		} else if (!!data) {
+		} else if (data) {
 			contents = <p className="results__none-msg">{data}</p>
 		}
 
