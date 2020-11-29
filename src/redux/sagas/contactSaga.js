@@ -9,7 +9,6 @@ function getContacts(term) {
 			return data
 		})
 		.catch((err) => {
-			console.log(err);
 			const errorText = err.response?.data?.error;
 			if (errorText) return errorText;
 			return err.message;
