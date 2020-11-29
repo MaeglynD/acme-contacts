@@ -74,7 +74,11 @@ describe('searchContacts', () => {
 
 		describe('when the search box is empty', () => {
 			it('clears the search results and displays the default message', async () => {
-				const { getByPlaceholderText, getByText, container } = renderWithProvider(SearchContacts)
+				const {
+					getByPlaceholderText,
+					getByText,
+					container
+				} = renderWithProvider(SearchContacts)
 
 				// type george, click search, clear input, check if results depopulated
 				const searchBox = () => getByPlaceholderText('Search for contacts');
